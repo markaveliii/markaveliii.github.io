@@ -1,0 +1,48 @@
+.container{
+	height: fit-content;
+	width: fit-content;
+	background-color:steelblue;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.nav-bar{
+	height: 50px;
+	background-color: aliceblue;
+	grid-column: span 3;
+}
+
+.body{
+	height: 300px;
+	width: auto;
+	text-align: center;
+	grid-column: span 3;
+}
+
+.body1{
+	background-color: aqua;
+}
+
+.body2{
+	background-color:bisque;
+}
+
+.body3{
+	background-color:chocolate;
+}
+
+.footer{
+	height: 50px;
+	background-color:crimson;
+	grid-column: span 3;
+}
+
+.nav-list li{
+	display: inline;
+	text-decoration: none;
+}
+
+.nav-item{
+	margin: 30px;
+	font-weight: bolder;
+}
