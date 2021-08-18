@@ -1,48 +1,121 @@
-.container{
-	height: fit-content;
-	width: fit-content;
+.containerr{
 	background-color:steelblue;
 	display: grid;
+	height: fit-content;
+	width: 85%;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin-left: 7.5%;
 }
 
 .nav-bar{
+	padding-top: 10px;
 	height: 50px;
-	background-color: aliceblue;
-	grid-column: span 3;
-}
-
-.body{
-	height: 300px;
-	width: auto;
-	text-align: center;
-	grid-column: span 3;
-}
-
-.body1{
-	background-color: aqua;
-}
-
-.body2{
-	background-color:bisque;
-}
-
-.body3{
-	background-color:chocolate;
-}
-
-.footer{
-	height: 50px;
-	background-color:crimson;
+	background-color: black;
 	grid-column: span 3;
 }
 
 .nav-list li{
+	margin: 0;
 	display: inline;
 	text-decoration: none;
 }
 
 .nav-item{
-	margin: 30px;
+	padding-top: 20px;
+	padding: 40px;
+	padding-bottom: 30px;
 	font-weight: bolder;
+	color: white;
+	transition: background-color 0.25s ease-in-out;
+}
+
+.nav-item:hover{
+	background-color: steelblue;
+}
+
+.body{
+	height: 150px;
+	width: 95%;
+	text-align: center;
+	grid-column: span 3;
+	margin-left: 2.5%;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: large;
+}
+
+.banner{
+	grid-column: span 3;
+	background-color: darkturquoise;
+	height: 900px;
+	background-image: url(images/tline.JPG);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.body1{
+	background-color:dimgrey;
+}
+
+.body1-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.body1-content img {
+	padding-top: 120px;
+	width: 300px;
+}
+
+.body1-content p {
+	padding-top: 60px;
+	width: 65%;
+}
+
+.body-animation{
+	animation: content-expand 2s ease-in-out forwards;
+}
+
+@keyframes content-expand {
+	0%{
+	}
+
+	50%{
+	}
+
+	100%{
+		background-color: whitesmoke;
+		height: 1000px;
+	}
+}
+
+.body2{
+	background-color:gray;
+}
+
+.body2-content{
+	padding-top: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.body3{
+	background-color:lightslategray;
+}
+
+.body3-content{
+	padding-top: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.footer{
+	height: 50px;
+	background-color:crimson;
+	grid-column: span 3;
 }
