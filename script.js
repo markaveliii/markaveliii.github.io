@@ -1,6 +1,6 @@
 window.addEventListener('scroll', () => {
 	let content = document.querySelector('.body1');
-	let contentPosition = content.getBoundingClientRect().top;
+	let contentPosition = content.getBoundingClientRect().top*1.2;
 	let contentPositionBot = content.getBoundingClientRect().bottom/2;
 	let screenPosition = window.innerHeight;
 
@@ -18,12 +18,15 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('scroll', () => {
 	let content = document.querySelector('.body2');
-	let contentPosition = content.getBoundingClientRect().top;
+	let contentPosition = content.getBoundingClientRect().top*1.3;
+	let contentPositionBot = content.getBoundingClientRect().bottom;
 	let screenPosition = window.innerHeight;
 
 	if(contentPosition < screenPosition){
 		content.classList.add('body-animation');
-		$('.body2-content').show();
+		if(contentPositionBot < screenPosition){
+			$('.body2-content').show();
+		}
 	}
 	else{
 		content.classList.remove('body-animation');

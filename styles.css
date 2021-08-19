@@ -48,6 +48,7 @@
 	background-color: darkturquoise;
 	height: 900px;
 	background-image: url(images/tline.JPG);
+	background-color: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -96,11 +97,38 @@
 }
 
 .body2-content{
-	padding-top: 150px;
+	padding-top: 60px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
+}
+
+.projects{
+	padding-top: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+}
+
+.proj1 {
+	background-image: url(images/level-jjamm.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.projects a{
+	background-color: aqua;
+	height: 330px;
+	width: 330px;
+	text-decoration: none;
+}
+
+.projects p{
+	width: 330px;
+	padding-top: 300px;
 }
 
 .body3{
