@@ -6,9 +6,9 @@ window.addEventListener('scroll', () => {
 
 	if(contentPosition < screenPosition){
 		content.classList.add('body-animation');
-		if(contentPositionBot < screenPosition){
+		content.addEventListener('animationend', () => {
 			$('.body1-content').show();
-		}
+		})
 	}
 	else{
 		content.classList.remove('body-animation');
@@ -24,9 +24,9 @@ window.addEventListener('scroll', () => {
 
 	if(contentPosition < screenPosition){
 		content.classList.add('body-animation');
-		if(contentPositionBot < screenPosition){
+		content.addEventListener('animationend', () => {
 			$('.body2-content').show();
-		}
+		})
 	}
 	else{
 		content.classList.remove('body-animation');
@@ -41,7 +41,9 @@ window.addEventListener('scroll', () => {
 
 	if(contentPosition < screenPosition){
 		content.classList.add('body-animation');
-		$('.body3-content').show();
+		content.addEventListener('animationend', () => {
+			$('.body3-content').show();
+		})
 	}
 	else{
 		content.classList.remove('body-animation');
