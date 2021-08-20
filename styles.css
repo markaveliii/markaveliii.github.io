@@ -101,13 +101,12 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-evenly;
 }
 
 .projects{
-	padding-top: 100px;
+	padding-top: 120px;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 	gap: 15px;
 }
@@ -121,14 +120,58 @@
 
 .projects a{
 	background-color: aqua;
-	height: 330px;
-	width: 330px;
+	height: 180px;
+	width: 180px;
 	text-decoration: none;
 }
 
 .projects p{
-	width: 330px;
-	padding-top: 300px;
+	padding-top: 150px;
+	font-size: small;
+}
+
+@media (min-width: 0px) and (max-width: 707px){
+	.projects{
+		padding-top: 70px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 35px;
+	}
+	
+	.projects p{
+		display: none;
+	}
+	.nav-bar li{
+		display: none;
+	}
+	.banner{
+		background-size: 400px;
+		height: 700px;
+		background-color: steelblue;
+	}
+	.body1-content p {
+		width: 85%;
+		font-size:small;
+	}
+}
+@media (min-width: 965px){
+	.projects a{
+		background-color: aqua;
+		height: 250px;
+		width: 250px;
+		text-decoration: none;
+	}
+	.projects p{
+		padding-top: 200px;
+		font-size: large;
+	}
+}
+
+@media (min-width: 1400) {
+	.projects{
+		gap: 80px;
+	}
 }
 
 .body3{
