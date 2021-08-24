@@ -76,7 +76,7 @@
 }
 
 .body-animation{
-	animation: content-expand 2s ease-in-out forwards;
+	animation: content-expand 1.3s ease-in-out forwards;
 }
 
 @keyframes content-expand {
@@ -111,6 +111,11 @@
 	gap: 15px;
 }
 
+.project{
+	text-decoration: none;
+	color:grey;
+}
+
 .proj1 {
 	background-image: url(images/level-jjamm.jpg);
 	background-size: cover;
@@ -118,14 +123,13 @@
 	background-repeat: no-repeat;
 }
 
-.projects a{
-	background-color: aqua;
+.project a{
 	height: 180px;
 	width: 180px;
-	text-decoration: none;
+	
 }
 
-.projects p{
+.project p{
 	padding-top: 150px;
 	font-size: small;
 }
@@ -139,6 +143,11 @@
 		gap: 35px;
 	}
 	
+	.projects a{
+		height: 220px;
+		width: 220px;
+	}
+
 	.projects p{
 		display: none;
 	}
@@ -151,10 +160,29 @@
 		background-color: steelblue;
 	}
 	.body1-content p {
+		font-size: smaller;
+		padding-top: 20px;
 		width: 85%;
-		font-size:small;
+	}
+	.body1-content img {
+		padding-top: 10px;
+	}
+	
+}
+
+@media (min-width: 708px) and (max-width: 964px){
+	.projects a{
+		background-color: aqua;
+		height: 175px;
+		width: 175px;
+		text-decoration: none;
+	}
+	.projects p{
+		padding-top: 200px;
+		font-size: large;
 	}
 }
+
 @media (min-width: 965px){
 	.projects a{
 		background-color: aqua;
@@ -166,6 +194,7 @@
 		padding-top: 200px;
 		font-size: large;
 	}
+	
 }
 
 @media (min-width: 1400) {
@@ -179,14 +208,24 @@
 }
 
 .body3-content{
-	padding-top: 150px;
+	padding-top: 80px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 }
+
+.body3-content .resume-partial{
+	width: 70%;
+	display: block;
+}
+
+.body3{
+	overflow: auto;
+}
+
 .footer{
 	height: 50px;
-	background-color:crimson;
+	background-color:black;
 	grid-column: span 3;
 }

@@ -1,3 +1,4 @@
+
 window.addEventListener('scroll', () => {
 	let content = document.querySelector('.body1');
 	let contentPosition = content.getBoundingClientRect().top*1.2;
@@ -37,6 +38,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
 	let content = document.querySelector('.body3');
 	let contentPosition = content.getBoundingClientRect().top;
+	let contentPositionBot = content.getBoundingClientRect().bottom;
 	let screenPosition = window.innerHeight;
 
 	if(contentPosition < screenPosition){
@@ -47,7 +49,7 @@ window.addEventListener('scroll', () => {
 	}
 	else{
 		content.classList.remove('body-animation');
-		$('.body-content').hide();
+		$('.body3-content').hide();
 	}
 })
 
