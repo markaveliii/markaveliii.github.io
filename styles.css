@@ -66,12 +66,12 @@
 }
 
 .body1-content img {
-	padding-top: 120px;
+	padding-top: 80px;
 	width: 300px;
 }
 
 .body1-content p {
-	padding-top: 60px;
+	padding-top: 30px;
 	width: 65%;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .projects{
-	padding-top: 120px;
+	padding-top: 60px;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
@@ -112,8 +112,9 @@
 }
 
 .project{
+	border: 10px solid steelblue;
 	text-decoration: none;
-	color:grey;
+	color:black;
 }
 
 .proj1 {
@@ -122,7 +123,16 @@
 	background-position: center;
 	background-repeat: no-repeat;
 }
-
+.proj2 {
+	background-image: url(images/scrapey.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.proj3 {
+	background-image: url(images/AR_APP.JPG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .project a{
 	height: 180px;
 	width: 180px;
@@ -130,7 +140,7 @@
 }
 
 .project p{
-	padding-top: 150px;
+	padding-top: 100px;
 	font-size: small;
 }
 
@@ -140,7 +150,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 35px;
+		gap: 25px;
 	}
 	
 	.projects a{
@@ -178,7 +188,7 @@
 		text-decoration: none;
 	}
 	.projects p{
-		padding-top: 200px;
+		padding-top: 130px;
 		font-size: large;
 	}
 }
@@ -194,8 +204,7 @@
 		padding-top: 200px;
 		font-size: large;
 	}
-	
-}
+}	
 
 @media (min-width: 1400) {
 	.projects{
