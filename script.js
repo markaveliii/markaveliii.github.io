@@ -52,5 +52,5 @@ window.addEventListener('scroll', () => {
 	}
 })
 
-let x = document.getElementById("nav-contact");
+var x = document.getElementById("nav-contact");
 x.addEventListener("click", function(){alert('click');});

@@ -2,7 +2,7 @@
 	background-color:steelblue;
 	display: grid;
 	height: fit-content;
-	width: 85%;
+	width: 90%;
 	grid-template-columns: 1fr 1fr 1fr;
 	margin-left: 7.5%;
 }
@@ -45,13 +45,17 @@
 
 .banner{
 	grid-column: span 3;
-	background-color: darkturquoise;
 	height: 900px;
 	background-image: url(images/tline.JPG);
-	background-color: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	text-align: center;
+	padding-top: 400px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 50pt;
+	filter: opacity(70%);
+	filter: brightness(80%);
 }
 
 .body1{
@@ -80,12 +84,6 @@
 }
 
 @keyframes content-expand {
-	0%{
-	}
-
-	50%{
-	}
-
 	100%{
 		background-color: whitesmoke;
 		height: 1000px;
@@ -164,11 +162,6 @@
 	.nav-bar li{
 		display: none;
 	}
-	.banner{
-		background-size: 400px;
-		height: 700px;
-		background-color: steelblue;
-	}
 	.body1-content p {
 		font-size: smaller;
 		padding-top: 20px;
@@ -176,6 +169,13 @@
 	}
 	.body1-content img {
 		padding-top: 10px;
+	}
+	textarea{
+		width: 60%;
+	}
+	#email{
+		width: 60%;
+		padding-left: 50px;
 	}
 	
 }
@@ -190,6 +190,13 @@
 	.projects p{
 		padding-top: 130px;
 		font-size: large;
+	}
+	textarea{
+		width: 60%;
+	}
+	#email{
+		width: 60%;
+		padding-left: 50px;
 	}
 }
 
@@ -242,4 +249,9 @@
 	height: 500px;
 	background-color:whitesmoke;
 	grid-column: span 3;
+}
+
+.body h1{
+	padding-top: 50px;
+	font-family:fantasy, 'Papyrus', 'Times';
 }
