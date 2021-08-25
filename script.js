@@ -1,4 +1,3 @@
-
 window.addEventListener('scroll', () => {
 	let content = document.querySelector('.body1');
 	let contentPosition = content.getBoundingClientRect().top*1.2;
@@ -53,3 +52,5 @@ window.addEventListener('scroll', () => {
 	}
 })
 
+let x = document.getElementById("nav-contact");
+x.addEventListener("click", function(){alert('click');});

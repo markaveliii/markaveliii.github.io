@@ -230,11 +230,16 @@
 }
 
 .body3{
-	overflow: auto;
+	overflow:scroll;
 }
 
-.footer{
-	height: 50px;
-	background-color:black;
+.body4{
+	padding-top: 100px;
+	height: 600px;
+}
+
+.form{
+	height: 500px;
+	background-color:whitesmoke;
 	grid-column: span 3;
 }
