@@ -8,22 +8,38 @@
 }
 
 .nav-bar{
+	padding-left: 0;
+	display: flex;
+	justify-content: space-between;
 	padding-top: 10px;
 	height: 50px;
 	background-color: black;
 	grid-column: span 3;
 }
 
-.nav-list li{
+.nav-list div{
 	margin: 0;
 	display: inline;
 	text-decoration: none;
 }
 
+@media (max-width: 366px){
+	.nav-bar{
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		height: 70px;
+	}
+}
+@media (max-width: 207px){
+	.nav-bar{
+		height: 115px;
+	}
+}
 .nav-item{
 	padding-top: 20px;
-	padding: 40px;
-	padding-bottom: 30px;
+	padding: 10px;
+	padding-bottom: 10px;
 	font-weight: bolder;
 	color: white;
 	transition: background-color 0.25s ease-in-out;
